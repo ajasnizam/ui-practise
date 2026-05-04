@@ -15,8 +15,65 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: white;
+    }
 
+    .navbar {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .hero {
+      padding-top: 120px;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+    }
+
+    .btn-custom {
+      background: #38bdf8;
+      border: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .btn-custom:hover {
+      background: #0ea5e9;
+    }
+
+    .section {
+      padding: 50px 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #38bdf8;
+      color: black;
+    }
+
+    footer {
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,42 +81,67 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand">AJAS Portfolio</a>
+    <a class="navbar-brand">Ajas Nizam</a>
   </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero">
-  <div>
-    <img src="https://avatars.githubusercontent.com/u/79577892?v=4">
-    <h1 class="mt-3">Ajas Nizam</h1>
-    <p>B.Tech Computer Science Student | Cybersecurity Enthusiast</p>
+  <img src="https://avatars.githubusercontent.com/u/79577892?v=4">
+  <h1 class="mt-3">Ajas Nizam</h1>
+  <p>B.Tech Computer Science Student | Cybersecurity Enthusiast</p>
 
-    <button onclick="github()" class="btn btn-custom m-2">
-      <i class="fab fa-github"></i> GitHub
-    </button>
+  <a href="https://github.com/ajasnizam" target="_blank" class="btn btn-custom m-2">
+    <i class="fab fa-github"></i> GitHub
+  </a>
 
-    <button onclick="linkedin()" class="btn btn-custom m-2">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </button>
-  </div>
+  <a href="https://www.linkedin.com/in/ajas-nizam-aa9758212/" target="_blank" class="btn btn-custom m-2">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
 </section>
 
 <!-- About -->
 <section class="section text-center">
   <h2>About Me</h2>
   <p>
-    I am a B.Tech Computer Science student with a strong interest in Cybersecurity and Software Development. 
-    I enjoy exploring security concepts, ethical hacking techniques, and building practical applications using Python and web technologies. 
-    I am continuously learning and improving my skills to become a proficient cybersecurity professional.
+    I am a B.Tech Computer Science student with a strong interest in Cybersecurity and Software Development.
+    I focus on building practical applications and exploring security concepts, including ethical hacking and system vulnerabilities.
+    I am continuously improving my skills in Python, web technologies, and secure application development.
   </p>
 </section>
 
-<!-- Education -->
+<!-- Projects (MOST IMPORTANT) -->
 <section class="section text-center">
-  <h2>Education</h2>
-  <p>B.Tech in Computer Science</p>
-  <p>MES Institute of Technology and Management</p>
+  <h2>Projects</h2>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5>Tourney – Online Turf Booking System</h5>
+          <p>
+            Developed a web-based platform for booking sports turfs online.
+            Implemented user-friendly booking features and scheduling system to simplify reservations.
+          </p>
+          <a href="https://github.com/ajasnizam" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5>RAG-Based Educational Chatbot</h5>
+          <p>
+            Built a Retrieval-Augmented Generation chatbot using BM25 and knowledge graph techniques.
+            Integrated LLMs to provide accurate and context-aware responses for educational queries.
+          </p>
+          <a href="https://github.com/ajasnizam" target="_blank">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- Skills -->
@@ -70,15 +152,21 @@
       <div class="col-md-3"><div class="card p-3">Python</div></div>
       <div class="col-md-3"><div class="card p-3">C Programming</div></div>
       <div class="col-md-3"><div class="card p-3">HTML & CSS</div></div>
-      <div class="col-md-3"><div class="card p-3">Cybersecurity Basics</div></div>
+      <div class="col-md-3"><div class="card p-3">Cybersecurity Fundamentals</div></div>
     </div>
   </div>
+</section>
+
+<!-- Education -->
+<section class="section text-center">
+  <h2>Education</h2>
+  <p>B.Tech in Computer Science</p>
+  <p>MES Institute of Technology and Management</p>
 </section>
 
 <!-- Contact -->
 <section class="section text-center">
   <h2>Contact</h2>
-  <p><i class="fa fa-phone"></i> +91 7994750776</p>
   <p><i class="fa fa-envelope"></i> ajasnizam04@gmail.com</p>
 </section>
 
@@ -86,16 +174,6 @@
 <footer>
   <p>© 2026 Ajas Nizam | All Rights Reserved</p>
 </footer>
-
-<script>
-  function github() {
-    window.location = "https://github.com/ajasnizam";
-  }
-
-  function linkedin() {
-    window.location = "https://www.linkedin.com/in/ajas-nizam-aa9758212/";
-  }
-</script>
 
 </body>
 </html>
