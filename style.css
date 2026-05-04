@@ -36,10 +36,12 @@
     }
 
     .card {
-      background: #1e293b;
-      border: none;
-      transition: 0.3s;
-    }
+  background: #1e293b;
+  color: white;   /* 🔥 THIS FIXES IT */
+  border: none;
+  transition: 0.3s;
+}
+
 
     .card:hover {
       transform: translateY(-10px);
